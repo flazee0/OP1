@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разбиватель счетов</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Разбиватель счетов</h1>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="bill-form">
+            <div class="input-group">
+                <label for="totalAmount">Общая сумма счета:</label>
+                <input type="number" id="totalAmount" placeholder="Введите сумму">
+            </div>
+            <div class="input-group">
+                <label for="numberOfPeople">Количество человек:</label>
+                <input type="number" id="numberOfPeople" placeholder="Введите количество">
+            </div>
+            <button id="calculateBtn">Разделить счет</button>
+        </div>
+        
+        <div class="result" id="result">
+            <h2>Результат:</h2>
+            <p id="amountPerPerson"></p>
+        </div>
+        
+        <div class="history">
+            <h2>История разделения счетов</h2>
+            <div id="historyList"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
